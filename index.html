@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Bowling Scene (WebXR)</title>
+    <!-- Ensure compatibility for WebXR -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        /* Style for the body and center content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Optional background color */
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px; /* Space below the title */
+        }
+        button {
+            font-family: Arial, sans-serif;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff; /* Bootstrap primary color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 20px; /* Space below the button */
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker shade for hover effect */
+        }
+        #xr-container {
+            display: none; /* Hide VR container initially */
+            width: 100%; /* Ensure it takes full width */
+            height: 100%; /* Ensure it takes full height */
+        }
+    </style>
+</head>
+<body>
+    <!-- Title for the VR Bowling 3D scene -->
+    <h1>VR Bowling 3D</h1>
+
+    <!-- Start button -->
+    <button id="start-button">Start</button>
+
+    <!-- A container for the WebXR canvas -->
+    <div id="xr-container"></div>
+    
+    <!-- Include the main Three.js script with WebXR support -->
+    <script type="module" src="app.js"></script>
+
+    <script>
+        // Event listener for the Start button
+        document.getElementById('start-button').addEventListener('click', function() {
+            // Hide the title and button
+            document.querySelector('h1').style.display = 'none';
+            document.getElementById('start-button').style.display = 'none';
+
+            // Show the VR container
+            document.getElementById('xr-container').style.display = 'block';
+
+            // Call the function that initializes your VR scene
+            init(); // Ensure init is defined in app.js
+        });
+    </script>
+</body>
+</html>
