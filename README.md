@@ -1,7 +1,7 @@
 # vr-bowling-game
 🎳 A prototype of  VR bowling game built with Three.js. Features realistic physics, interactive gameplay, and a stunning 3D bowling alley environment. Optimized for WebXR extension it is currently a prototype model which can boost your project from beginner overall you still have to add each bowling pin physics 
 # VR Bowling Game
-
+**Please refer other branches for code and assets**
 ### 🎳 **Description**
 
 Welcome to the **VR Bowling Game**, a prototype built with Three.js to bring an immersive bowling experience to virtual reality. This project is still in development, offering the foundational mechanics and a 3D environment for further enhancements. Dive into the world of WebXR and explore how virtual bowling can evolve!
@@ -49,7 +49,7 @@ vr-bowling-game/
    ```
 4. Start the development server:
    ```bash
-   npm dev
+   npm vite
    ```
 5. Open the project in your browser at `http://localhost:3000`.
 
