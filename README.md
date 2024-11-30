@@ -37,7 +37,7 @@ vr-bowling-game/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/vr-bowling-game.git
+   git clone https://github.com/hardikgt1/vr-bowling-game
    ```
 2. Navigate to the project folder:
    ```bash
